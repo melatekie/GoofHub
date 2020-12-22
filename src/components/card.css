@@ -1,0 +1,99 @@
+.categories {
+    width: 440px;
+    height: 24rem;
+    overflow: hidden;
+    background: transparent;
+    box-shadow: 0 6px 10px rgba(158, 35, 35, 0.08), 0 0 6px rgba(219, 109, 109, 0.05);
+    transition: .3s;
+    cursor: pointer;
+
+}
+
+.categories:hover{
+    box-shadow: 5px 10px 20px 1px rgba(0, 0, 0, 0.253) !important;
+    transform: scale(1.03);
+   
+   
+}
+
+.categories-body{
+    padding: 3rem 0 !important;
+    justify-content: center;
+    
+    
+}
+
+.categories-text{
+    font-size: .9rem;
+    padding: 0.4rem 1.9rem;
+} 
+
+
+@media only screen and (max-device-width: 920px) {
+    .categories {
+        position: relative;
+        width: 300px !important;
+        overflow-wrap: hidden;
+        
+
+    }
+  }
+
+.types-img-top {
+    width: 100%;
+    height: 100px;
+    object-fit: cover;
+}
+
+@media (min-width: 576px){ 
+.card-deck {
+    display: flex;
+    flex-flow: row wrap;
+    margin-right: -590px;
+    margin-left: -250px;
+    position: relative;
+   
+    
+    }
+}
+
+
+.card-img {
+    height: 390px;
+    width: auto;
+    object-fit: cover;
+}
+
+.frame {
+    background-color: rgba(0, 0, 0, 0.349);
+    position: relative;
+    width: 100%;
+    height: 100%;
+    top:0;
+    left:0;
+    overflow:auto;
+    
+} 
+
+.deck1 {
+    margin-left: 10px;
+}
+
+.frame::-webkit-scrollbar {
+    -webkit-appearance: none;
+}
+
+.frame::-webkit-scrollbar:vertical {
+    width: 11px;
+}
+
+.frame::-webkit-scrollbar:horizontal {
+    height: 11px;
+}
+
+.frame::-webkit-scrollbar-thumb {
+    border-radius: 8px;
+    border: 2px solid rgb(27, 26, 26); /* should match background, can't be transparent */
+    background-color: rgba(0, 0, 0, .5);
+}
+

@@ -1,0 +1,59 @@
+.login {
+    background-color: rgb(0, 0, 0) !important;
+    font-family: 'Yanone Kaffeesatz', sans-serif;
+    margin-top: 90px;
+    padding-top: 45px;
+    border-radius: 2rem;
+    box-shadow: 2px 10px 30px 10px rgb(90, 94, 94);
+}
+
+.email1 {
+    font-family: 'BuiltTitlingRg-Regular';
+    text-align: center;   
+    font-size: 70px;
+    color: white;
+    
+}
+
+.fontfill {
+    font-size: 20px;
+}
+
+.fontlabel {
+    font-family: 'BuiltTitlingRg-Regular';
+    color: white;
+    font-size: 35px;
+    margin-bottom: -5px;
+}
+
+.fontText {
+    font-family: 'BuiltTitlingRg-Regular';
+    color: white;
+    font-size: 17px;
+    margin-bottom: -5px;
+}
+
+.divider1 {
+    margin-top: -7px;
+    margin-bottom: 23px;
+    border-style: double;
+    background-color: gray;
+}
+
+.divider2 {
+    margin-top: 24px;
+    margin-bottom: -20px;
+    border-style: double;
+    background-color: gray;
+}
+
+.enter {
+    margin-top: 40px;
+    font-family: 'BuiltTitlingRg-Regular';
+    font-size: 25px;
+}
+.enter1 {
+    margin-top: 20px;
+    font-family: 'BuiltTitlingRg-Regular';
+    font-size: 25px;
+}

@@ -1,0 +1,19 @@
+.banner {
+    padding-top: 20px;
+    padding-bottom: 20px;
+    background-color: gold;
+    background-size: cover;
+    border: 4.5px black solid;
+    border-radius: 30px 3px;
+    vertical-align: middle;
+    text-align: center;
+    font-family:  'CartoonistKooky';
+    letter-spacing: 6px;
+    margin-top: 15px;
+}
+
+
+
+
+
+

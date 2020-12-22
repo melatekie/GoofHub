@@ -1,0 +1,28 @@
+.nav-color {
+  background-color: rgb(255, 235, 51) !important;   
+}
+.nav-font {
+  font-family: 'Teko', sans-serif;
+  font-size: 23px;
+  
+}
+
+.nav-siteName {
+  font-size: x-large;
+  font-family: 'ColunaRounded-CondensedBold';
+  font-style: oblique;
+}
+
+.header-container {
+  display: flex;
+  flex-direction: column;
+  width: 36%;
+}
+
+.subheader {
+  margin-left: 30px;
+  margin-top: -28px;
+  font-family: 'Blockletter';
+}
+
+  

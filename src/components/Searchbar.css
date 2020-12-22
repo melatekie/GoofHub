@@ -1,0 +1,56 @@
+.typeFilter {
+  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+  font-size: 18px;
+}
+
+/* line search box  width changes the size of searchbar*/
+.searchbplogin-box {
+  position: absolute;
+  float: left;
+  font-size: 20px;
+  border: none;
+  outline: none;
+  background: none;
+  border-bottom: 1px solid black;
+  justify-content: center;
+ 
+}
+
+searchbptextbox  {
+  width: 100%;
+  overflow: hidden;
+  font-size: 18px;
+  border-bottom: 1px solid black;
+}
+
+/*icon*/
+.searchbptextbox i{
+  width: 40px;
+  float: left;
+  text-align: center;
+
+}
+
+.searchbptextbox input{
+  border: none;
+  outline: none;
+  background: none;
+  color: black;
+  font-size: 18px;
+  width: 85%;
+  float: left;
+  
+}
+
+.search_icon1{
+  height: 40px;
+  width: 40px;
+  float: right;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 50%;
+  color:black;
+  text-decoration:none;
+}
+

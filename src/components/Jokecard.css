@@ -1,0 +1,19 @@
+/*Settings for all*/
+.jokebox1 {
+    background-color: gold !important;
+    margin-bottom: 10px;
+    box-shadow: gray;
+    border-width: 1px 1px 1px;
+}
+
+.containerpost {
+    justify-content: flex-end;
+    display: inline-flex;
+    
+}
+
+.blockquote-footer {
+    color: black;
+    justify-content: flex-end;
+    display: flex;
+}

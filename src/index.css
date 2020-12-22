@@ -1,0 +1,52 @@
+
+@font-face {
+  font-family: "CartoonistKooky";
+  src: url("./fonts/cartoonistkooky.eot"); /* IE9 Compat Modes */
+  src: url("./fonts/cartoonistkooky.eot?#iefix") format("embedded-opentype"), /* IE6-IE8 */
+    url("./fonts/cartoonistkooky.otf") format("opentype"), /* Open Type Font */
+    url("./fonts/cartoonistkooky.svg") format("svg"), /* Legacy iOS */
+    url("./fonts/cartoonistkooky.ttf") format("truetype"), /* Safari, Android, iOS */
+    url("./fonts/cartoonistkooky.woff") format("woff"), /* Modern Browsers */
+    url("./fonts/cartoonistkooky.woff2") format("woff2"); /* Modern Browsers */
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "BuiltTitlingRg-Regular";
+  src: url("./fonts/builttitlingrg.eot"); /* IE9 Compat Modes */
+  src: url("./fonts/builttitlingrg.eot?#iefix") format("embedded-opentype"), /* IE6-IE8 */
+    url("./fonts/builttitlingrg.otf") format("opentype"), /* Open Type Font */
+    url("./fonts/builttitlingrg.svg") format("svg"), /* Legacy iOS */
+    url("./fonts/builttitlingrg.ttf") format("truetype"), /* Safari, Android, iOS */
+    url("./fonts/builttitlingrg.woff") format("woff"), /* Modern Browsers */
+    url("./fonts/builttitlingrg.woff2") format("woff2"); /* Modern Browsers */
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "ColunaRounded-CondensedBold";
+  src: url("./fonts/ColunaRounded.eot"); /* IE9 Compat Modes */
+  src: url("./fonts/ColunaRounded.eot?#iefix") format("embedded-opentype"), /* IE6-IE8 */
+    url("./fonts/ColunaRounded.otf") format("opentype"), /* Open Type Font */
+    url("./fonts/ColunaRounded.svg") format("svg"), /* Legacy iOS */
+    url("./fonts/ColunaRounded.ttf") format("truetype"), /* Safari, Android, iOS */
+    url("./fonts/ColunaRounded.woff") format("woff"), /* Modern Browsers */
+    url("./fonts/ColunaRounded.woff2") format("woff2"); /* Modern Browsers */
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "Blockletter";
+  src: url("./fonts/Blockletter.eot"); /* IE9 Compat Modes */
+  src: url("./fonts/Blockletter.eot?#iefix") format("embedded-opentype"), /* IE6-IE8 */
+    url("./fonts/Blockletter.otf") format("opentype"), /* Open Type Font */
+    url("./fonts/Blockletter.svg") format("svg"), /* Legacy iOS */
+    url("./fonts/Blockletter.ttf") format("truetype"), /* Safari, Android, iOS */
+    url("./fonts/Blockletter.woff") format("woff"), /* Modern Browsers */
+    url("./fonts/Blockletter.woff2") format("woff2"); /* Modern Browsers */
+  font-weight: normal;
+  font-style: normal;
+}

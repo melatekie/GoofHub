@@ -1,0 +1,140 @@
+.proCard {
+    background-color:rgb(255, 235, 51);
+    box-shadow: 2px 5px 10px 5px #b7b210;
+    vertical-align: middle;
+    text-align: center;
+    border-radius: 3rem;
+    margin-right: -10px;
+    margin-left: -10px;
+    margin-top: 40px;
+}
+
+.proCardBody {
+    background-color: #14140636 !important;
+    border-radius: 5rem;
+    margin: 30px;
+    padding-left: 20px;
+    padding-right: 20px;
+}
+.proSideCard {
+    background-color: #14140646 !important;
+    border: none;
+    margin-left: 20px;   
+}
+
+.proAddBtn {
+    margin-left: 160px;
+    margin-top: -25px;
+    margin-bottom: -20px;
+    
+}
+.proSideName {
+    font-family: 'BuiltTitlingRg-Regular';
+    font-size: 35px;
+    text-align: center;
+    margin-top: 2px;
+    
+}
+.proSideUser {
+    font-family: 'Yanone Kaffeesatz', sans-serif;
+    font-size: 25px;
+    text-align: center;
+    margin-top: -20px;
+    
+}
+.proSideEmail {
+    font-family: 'Yanone Kaffeesatz', sans-serif;
+    font-size: 15px;
+    text-align: center;
+    margin-top: -20px;
+    font-style: italic;
+}
+.proTitle {
+    vertical-align: middle;
+    text-align: center;
+    font-family: 'CartoonistKooky';
+    font-size: 40px;
+    font-style: italic;
+    padding: -20px;
+}
+
+.proForm {
+   
+    background-color:#14140600 !important;
+    padding-left: 15px;
+    padding-right: 15px;
+}
+.progroup {
+    border-bottom: solid grey 2px !important;
+    padding-top: 1px;
+    
+}
+
+.proWhite {
+    font-family: 'BuiltTitlingRg-Regular';
+    color: white;
+    font-size: 30px;
+    text-align: left;
+    margin-top: 1rem;
+      
+}
+.proWhite1 {
+    font-family: 'BuiltTitlingRg-Regular';
+    color: white;
+    font-size: 30px;
+    text-align: left;
+    margin-top: 1.8rem;
+      
+}
+
+.proText {
+    font-family: 'Yanone Kaffeesatz', sans-serif;
+    font-size: 24px;
+    margin-top: 21px;
+    text-align: left;
+   
+}
+.proText1 {
+    font-family: 'Yanone Kaffeesatz', sans-serif;
+    font-size: 20px;
+    margin-top: 5px;
+    text-align: left;
+   
+}
+.proLineTop {
+    border-top: solid black 3px !important;
+}
+.proLineBot {
+    border-bottom: solid black 3px !important;
+    margin-bottom: 150px;
+}
+
+.procontrol {
+    background: none;
+    border: none;
+    margin-left: 1.5rem;
+   
+}
+
+.proimg-fluid {
+    max-width: 95%;
+    height: auto;
+    margin-left: 20px;
+    
+}
+
+
+.profas {
+    margin-right: 1.5rem;
+}
+.profas1 {
+    margin-right: 1.5rem;
+    margin-top: .8rem;
+}
+
+.proEmail {
+    font-family: 'Yanone Kaffeesatz', sans-serif;
+    font-size: 20px;
+    margin-top: 21px;
+    text-align: left;
+}
