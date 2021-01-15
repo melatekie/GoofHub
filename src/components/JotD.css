@@ -7,12 +7,12 @@
 .jotd{
     background-color: rgb(255, 235, 51) !important;
     font-family: 'CartoonistKooky';
-      
+    border-radius: 3rem;
 }
 
 .borderjoke{
-    border-style: solid;
- 
+    border-radius: 3rem;
+    border: 3.5px black solid;
 }
 
 .jotdivider {

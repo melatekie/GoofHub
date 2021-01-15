@@ -59,6 +59,27 @@ export function useGetUsername(table) {
     }, [table])
     return users
   }
+
+//likes
+export function useFetchRealtime(joke, currentUserId) {
+    const [jokes, setJokes] = useState([]);
+    useEffect(() => {
+        
+        firebase.firestore()
+          .collection('likes')
+          .where('uid','==',currentUserId)
+          .where('jokeId','==',joke.id).limit(1)
+          .onSnapshot((snapshot) => {
+              const newJokes = snapshot.docs.map((doc) => ({
+                  id: doc.id,...doc.data()             
+              }))
+              setJokes(newJokes);
+            })
+        
+    }, [joke, currentUserId])
+    return jokes
+}
+
 //used in admin(secret) page for new submitted jokes
 //get it realtime
 export function useSubmission(table) {

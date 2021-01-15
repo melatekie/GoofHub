@@ -2,7 +2,7 @@ import React from 'react';
 import { Card, ResponsiveEmbed } from 'react-bootstrap';
 import './Jokecard.css';
 import {useGetUser} from '../firebase/useFetch';
-
+import LikeButton from './likes';
 
 //Cards for text jokes
 export function Textjokes({data}) {
@@ -23,10 +23,11 @@ export function Textjokes({data}) {
                 <i>{Uname}</i>
             </footer>
             </blockquote>
-            <Card.Text>
-            </Card.Text>
         </Card.Body>
-        
+        <Card.Footer className="bg-transparent">
+            <LikeButton joke={data}/>
+            {data.likeCount? data.likeCount : 0}
+        </Card.Footer>
     </Card>
 );
 }
@@ -49,10 +50,11 @@ export function Imagejokes({data}) {
                     <i>{Uname}</i>
                 </footer>
             </blockquote>
-            <Card.Text>
-            </Card.Text>
         </Card.Body>
-            
+        <Card.Footer className="bg-transparent">
+            <LikeButton joke={data}/>
+            {data.likeCount? data.likeCount : 0}
+        </Card.Footer>
     </Card>
     );
 }
@@ -67,24 +69,25 @@ export function Videojokes({data}) {
 
     return(
     <Card className="jokebox1" border="dark"> 
-    <React.Fragment>    
-        <div style={{ width: 'auto', height: 'auto' }}>
-            <ResponsiveEmbed aspectRatio="16by9">
-                <embed type="image/svg+xml" src={data.content} />
-            </ResponsiveEmbed>
-        </div>
-     
-    </React.Fragment>
-    <Card.Body>
-        <blockquote className="blockquote mb-0">
-            <footer className="blockquote-footer">
-                <i>{Uname}</i>
-            </footer>
-        </blockquote>
-        <Card.Text>
-        </Card.Text>
-    </Card.Body>
-    
+        <React.Fragment>    
+            <div style={{ width: 'auto', height: 'auto' }}>
+                <ResponsiveEmbed aspectRatio="16by9">
+                    <embed type="image/svg+xml" src={data.content} />
+                </ResponsiveEmbed>
+            </div>
+        
+        </React.Fragment>
+        <Card.Body>
+            <blockquote className="blockquote mb-0">
+                <footer className="blockquote-footer">
+                    <i>{Uname}</i>
+                </footer>
+            </blockquote>
+        </Card.Body>
+        <Card.Footer className="bg-transparent">
+                <LikeButton joke={data}/>
+                {data.likeCount? data.likeCount : 0}
+        </Card.Footer>
     </Card>
     );
 }

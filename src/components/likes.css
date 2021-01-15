@@ -1,0 +1,10 @@
+.likebutton {	
+    font-size: 22px;	
+    font-weight: 600;	
+    line-height: 5px;		
+    text-transform: uppercase;	
+    text-decoration: none;	
+    white-space: nowrap;	
+    background-color: transparent;
+    border-color: transparent;	
+} 
