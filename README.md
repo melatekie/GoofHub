@@ -1,68 +1,205 @@
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+Web App Design Project
+===
 
-## Available Scripts
+# Goof-Hub
+## Group Members
+- Ricardo Daniels
+- Mei Tak Lee
+- Quinton Negron
+- Denice Veluz
+## Table of Contents
+1. [Overview](#Overview)
+1. [Product Spec](#Product-Spec)
+1. [Wireframes](#Wireframes)
+2. [Schema](#Schema)
 
-In the project directory, you can run:
+## Overview
+### Description
+A web app where users of all ages are able to enjoy text, image, and video jokes on their spare time. 
 
-### `npm start`
+### App Evaluation
+- **Category:** Entertainment
+- **Web:** Web app allows anyone use to it on different device platform without installation.
+- **Story:** Did you know that a good laugh is good for your health? A laugh boosts immunity, lowers stress, enhances teamwork and helps defuse conflict. Laughing as much as 100 times a day has the same effect as 15 minutes of cardio. One of the reasons why we should laugh more often. Also, top quality jokes are hard to find. How can users see, look for, rate, and share jokes during their busy lives? This app will give users a quick fix of comedy gold to make those busy days go by more pleasantly.
+- **Market:** All ages. Our Audience is mainly bored/anxious/unhappy/stressed users who are looking to improve their mood through humor. Users who want to cheer up others or just use jokes as a conversation starter. They are anyone from over the age of 5, beginners who started to learn how to read, office worker who needs a break, busy parents who are waiting to pick up their kids from after school activities, to retiree with lots of time. Along with entertaining our main demographic we will also include in our Audience Goofers who wish to entertain others by sharing their own jokes. 
+- **Habit:** This app can be used at least once a day when the user has time to browse the internet.
+- **Scope:** Users are not required to log-in in order to view jokes but are required if they want to submit and like jokes. Authenticated users can submit text, image and video jokes. Submitted jokes are reviewed by the admin within the Admin page to check its appropriateness and duplicates before being published on the site. Non-authenticated users and users under 18 are not allow to see Adult content jokes.
 
-Runs the app in the development mode.<br />
-Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
 
-The page will reload if you make edits.<br />
-You will also see any lint errors in the console.
+## Product Spec
 
-### `npm test`
+### 1. User Stories (Required)
 
-Launches the test runner in the interactive watch mode.<br />
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+**Required Must-have Stories**
 
-### `npm run build`
+* Home
+    - Unauthenticated (for any users)
+        - Joke of the Day changes with each refresh
+        - Each category is an image where users are able to click into any category to view jokes
+        - Log in/Sign up button only unauthenticated users are seen
+        - Search button
+        - The word "GOOF-HUB" returns to Home page when clicked 
+    - Authenticated
+        - Adult category is shown if user is over 18
+        - Current username is shown and can be clicked to profile page
+        - Log out button appears
+* Log In
+    - Users log in with their username and password
+    - Log in button disabled when username or password are empty
+    - Has a button to Sign Up Screen
+* Sign Up
+    - Switches between sign up with User or Professional
+    - Users can enter to Home screen immediately after sign up
+    - Professionals are brought back to Log In screen after sign up
+    - Goes back to Log In screen with back button
+* Profile
+    - Displays user first and last name, date of birth, username and email
+    - User able to change username. Profile name in NavBar is changed after automatic refresh. All other areas immediate change.
+    - User able to change email with correct current password
+    - User able to change password with correct current password 
+* Submit a Joke
+    - Authenticated users can submit a joke. Default option is text joke. 
+    - Default category selection is "other". Under 18 users does not have the option of "Adults Only" category. 
+    - Text joke: Text is required.
+    - Image joke: Image file is required.
+    - Video joke: YouTube video link is required.
+    - Keywords: At least one word is required.
+    - User has the option to submit the joke as Anonymous.
+* Search Page
+* Category Jokes Page
+    - Back button takes user back to Home Activity
+    - Action bar displays username of post creator and beginning of description
+    - Displays similar info as Home Activity 
+    - Full image button shows a popup with the full image
+    - Tag for its category
+    - Current user can reply to post, increments comment count
+    - Current user profile image displays next to reply space
+    - All related comments are displays for post
+    - Replied comments displays user profile image, username, description, time difference
+    - Users can delete their own comments, also decrements comment count
+* Admin Page
 
-Builds the app for production to the `build` folder.<br />
-It correctly bundles React in production mode and optimizes the build for the best performance.
+**Optional Nice-to-have Stories**
+* Tips to pop up when open app
+* Administration to monitor users and professionals
+* Setting
+    * Choose to show private information or not 
+    * change password
+* rating
+* upload profile image
+* reply to posts
+* other users can DM other users
+* Search posts
+* Professionals can advertise
+* Users can search for repair/fix based on their location
 
-The build is minified and the filenames include the hashes.<br />
-Your app is ready to be deployed!
+### 2. Navigation
+**Navigation Bar (top)**
+* Home
+* Submit a Joke
+* Profile
+* Log In/Log Out
+* Search
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
 
-### `npm run eject`
+**Flow Navigation** (Screen to Screen)
+* Login
+    - Home
+    - Register
+* Register
+    - Cancel to Login
+    - Home
+* Home
+    - Category page
+    - Submit a joke
+    - Profile
+    - Search
+    - Log-In/Log-Out
+* Profile
+    - Log out button to Log in 
+* Detail Post
+    - back to previous 
+* User Profile
+    - back to previous 
+* Compose
+    - Home
+* LogOut
+    * Login
 
-**Note: this is a one-way operation. Once you `eject`, you can’t go back!**
 
-If you aren’t satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+## Wireframes
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you’re on your own.
 
-You don’t have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn’t feel obligated to use this feature. However we understand that this tool wouldn’t be useful if you couldn’t customize it when you are ready for it.
+## Schema
+### Models
+#### users
 
-## Learn More
+   | Property      | Type     | Description |
+   | ------------- | -------- | ------------|
+   | objectId      | String   | unique id for the user account(same as Authentication Id) |
+   | firstName     | String   | name of user |
+   | lastName      | String   | name of user |
+   | email         | String   | email of user |
+   | username      | String   | alias of user |
+   | dob           | String   | date of birth of user |
+   | uid           | String   | authentication Id |
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+#### joke
 
-To learn React, check out the [React documentation](https://reactjs.org/).
+   | Property      | Type     | Description |
+   | ------------- | -------- | ------------|
+   | objectId      | String   | unique id for the user post (default field) |
+   | category      | Array    | genre of joke |
+   | content       | String   | text, image link, video link of joke |
+   | keywords      | Array    | descriptive words of joke for keyword search |
+   | name          | String   | name of joke creator |
+   | release       | Boolean  | true when joke is published on site |
+   | createdAt     | String   | date when joke is created  |
+   | type          | String   | text, image, or video |
+   | uid           | String   | user Id |
 
-### Code Splitting
+#### likes
 
-This section has moved here: https://facebook.github.io/create-react-app/docs/code-splitting
+   | Property      | Type     | Description |
+   | ------------- | -------- | ------------|
+   | objectId      | String   | unique id for the user account(default field) |
+   | jokeId        | String   | unique id of joke |
+   | uid           | String   | unique id of user |
 
-### Analyzing the Bundle Size
+#### report
 
-This section has moved here: https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size
+   | Property      | Type     | Description |
+   | ------------- | -------- | ------------|
+   | objectId      | String   | unique id for the user account(default field) |
+   | jokeId        | String   | unique id of joke |
+   | uid           | String   | unique id of user |
+   | reason        | String   | reason for the flagged joke |
+   | createdAt     | String   | datetime when report is created  |
 
-### Making a Progressive Web App
+### Networking
+#### List of network requests by screen
+   - Category Feed Screen
+      - (Read/GET) Query all jokes that are released within a category
+         ```javascript
+        firebase.firestore()
+          .collection(table)
+          .where('release','==', true)
+          .where('category','array-contains', category)
+          .get().then((snapshot) => {
+              const newJokes = snapshot.docs.map((doc) => ({
+                  id: doc.id,...doc.data()
+                  
+              }))
 
-This section has moved here: https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app
+              setJokes(newJokes);
+          })
+        ```
 
-### Advanced Configuration
+## Open-source libraries used
 
-This section has moved here: https://facebook.github.io/create-react-app/docs/advanced-configuration
-
-### Deployment
-
-This section has moved here: https://facebook.github.io/create-react-app/docs/deployment
-
-### `npm run build` fails to minify
-
-This section has moved here: https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify
+- [React](https://reactjs.org) - Frontend base in development of single-page application for user interfaces or UI components
+- [React-Bootstrap](https://react-bootstrap.github.io) - Responsiveness and high quality UI
+- [React-Hook](https://reactjs.org/docs/hooks-intro.html) - Functions for code readablility, cleaner look and re-usability of stateful logic
+- [Firebase Authentication](https://console.firebase.google.com/) - User authentication
+- [Firebase Cloud Firestore Database](https://console.firebase.google.com) - Backend database
+- [Firebase Storage](https://console.firebase.google.com) - Image storage

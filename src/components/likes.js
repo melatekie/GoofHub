@@ -51,22 +51,21 @@ export default function LikeButton({ joke }) {
         
         !currentUser ? (
             <Link to="/login">
-               <button className="likebutton">
-                    <i className="far fa-heart " style={{ color: "black" }}></i>         
-                    
-                </button> 
+               <div type='submit' className="likebutton">
+                    <i className="far fa-heart heartoutline"></i> 
+                </div> 
             </Link>) : 
             
         likes === true ? (
-            <button className="likebutton"
+            <div type='submit' className="likebutton"
                 onClick={() =>unLike(joke,currentUserId)}>
-                <i className="fas fa-heart " style={{ color: "red" }}></i>
-            </button>) :
-         
-        (<button className="likebutton"
+                <i className="fas fa-heart heartfull"></i>
+            </div>) :
+        (
+            <div type='submit' className="likebutton"
                 onClick={() =>addLike(joke,currentUserId)}>
-                <i className="far fa-heart " style={{ color: "black" }}></i>
-            </button>)
+                <i className="far fa-heart heartoutline"></i>
+            </div>)
          
     );
     

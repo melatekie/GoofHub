@@ -1,10 +1,26 @@
 .likebutton {	
+    display: inline-block;
     font-size: 22px;	
     font-weight: 600;	
-    line-height: 5px;		
+    line-height: 5px;	
+    letter-spacing: .4rem;	
     text-transform: uppercase;	
     text-decoration: none;	
     white-space: nowrap;	
     background-color: transparent;
     border-color: transparent;	
 } 
+.likebutton:hover > .heartoutline {
+    color: #e74c3c;
+}
+
+.heartoutline {
+    color: black;
+}
+
+.likebutton:hover > .heartfull {
+    color: black;
+}
+.heartfull {
+    color: red;
+}

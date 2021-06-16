@@ -116,7 +116,7 @@ const Profile = () => {
       <Row key={items.id}>
         <Col md={3} className="mt-5 align-items-center ">
           <img
-            src={currentUser.photoURL}
+            src={currentUser.photoURL===null? "https://firebasestorage.googleapis.com/v0/b/goofhub-team.appspot.com/o/profilepic.png?alt=media&token=d554c921-c31f-4592-8abf-78aca34a7e9d" : currentUser.photoURL}
             alt="Profile"
             className="rounded-circle proimg-fluid"
           />
