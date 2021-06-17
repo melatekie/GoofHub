@@ -101,4 +101,25 @@ export function useSubmission(table) {
   return jokes
 }
 
+//used in admin(secret) page for Report collection
+export function useReport(table) {
+    const [jokes, setJokes] = useState([]);
+    
+    useEffect(() => {
+      
+        firebase.firestore()
+            .collection(table)
+            .orderBy('jokeId','asc')
+            .get().then((snapshot) => {
+                const newJokes = snapshot.docs.map((doc) => ({
+                    id: doc.id,...doc.data()
+                    
+                }))
+  
+                setJokes(newJokes);
+            })
+    }, [table])
+    return jokes
+  }
+
  

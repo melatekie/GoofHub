@@ -3,6 +3,7 @@ import { Card, ResponsiveEmbed } from 'react-bootstrap';
 import './Jokecard.css';
 import {useGetUser} from '../firebase/useFetch';
 import LikeButton from './likes';
+import ReportButton from './report';
 
 //Cards for text jokes
 export function Textjokes({data}) {
@@ -25,8 +26,14 @@ export function Textjokes({data}) {
             </blockquote>
         </Card.Body>
         <Card.Footer className="bg-transparent">
-            <LikeButton joke={data}/>
-            {data.likeCount? data.likeCount : 0}
+            <div className="d-flex justify-content-between">
+                <div>
+                    <LikeButton joke={data}/>
+                    {data.likeCount? data.likeCount : ""}
+                </div>
+                <ReportButton joke={data}/>
+            </div>
+            
         </Card.Footer>
     </Card>
 );
@@ -52,8 +59,13 @@ export function Imagejokes({data}) {
             </blockquote>
         </Card.Body>
         <Card.Footer className="bg-transparent">
-            <LikeButton joke={data}/>
-            {data.likeCount? data.likeCount : 0}
+            <div className="d-flex justify-content-between">
+            <div>
+                <LikeButton joke={data}/>
+                {data.likeCount? data.likeCount : ""}
+                </div>
+                <ReportButton joke={data}/>
+            </div>
         </Card.Footer>
     </Card>
     );
@@ -85,8 +97,13 @@ export function Videojokes({data}) {
             </blockquote>
         </Card.Body>
         <Card.Footer className="bg-transparent">
+            <div className="d-flex justify-content-between">
+                <div>
                 <LikeButton joke={data}/>
-                {data.likeCount? data.likeCount : 0}
+                {data.likeCount? data.likeCount : ""}
+                </div>
+                <ReportButton joke={data}/>
+            </div>
         </Card.Footer>
     </Card>
     );

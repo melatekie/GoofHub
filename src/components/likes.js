@@ -33,7 +33,7 @@ export default function LikeButton({ joke }) {
         })          
     }
 
-    function unLike(joke, userId) {
+    function unLike(joke) {
                
         likedb.get().then((data) => {
             if(!data.empty) {
@@ -58,7 +58,7 @@ export default function LikeButton({ joke }) {
             
         likes === true ? (
             <div type='submit' className="likebutton"
-                onClick={() =>unLike(joke,currentUserId)}>
+                onClick={() =>unLike(joke)}>
                 <i className="fas fa-heart heartfull"></i>
             </div>) :
         (

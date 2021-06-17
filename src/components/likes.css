@@ -1,5 +1,6 @@
 .likebutton {	
-    display: inline-block;
+    display: inline-flex;
+    vertical-align: middle;
     font-size: 22px;	
     font-weight: 600;	
     line-height: 5px;	
@@ -23,4 +24,30 @@
 }
 .heartfull {
     color: red;
+}
+
+.reportbutton {	
+    display: inline-flex;
+    vertical-align: middle;
+    font-size: 22px;	
+    font-weight: 600;		
+    white-space: nowrap;	
+    background-color: transparent;	
+    border-color: transparent;	
+} 
+.reportpop {
+    border-color: black;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-size: 15px;
+    text-align: center;
+}
+.reportpop .arrow:after{
+    border-bottom-color: black;
+}
+
+.flagoutline {
+    color: black;
+}
+.reportbutton:hover > .flagoutline {
+    color: #e74c3c;
 }

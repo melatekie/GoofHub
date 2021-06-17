@@ -2,7 +2,7 @@ import React, {useState, useContext} from 'react';
 import { AuthContext } from "../auth/Auth";
 import firebase from "./firebase";
 import { Container, Row, Col, Form, Button,ResponsiveEmbed, Card } from 'react-bootstrap';
-import {useSubmission} from "./useFetch";
+import {useSubmission, useReport} from "./useFetch";
 import { EditFields } from './adminEdit';
 import JSONPretty from 'react-json-pretty';
 import '../components/Jokecard.css';
@@ -20,6 +20,12 @@ function AddData() {
     });
     const items = JSON.stringify(sortedByDate);
  
+    const report = useReport('report');
+    const reports = JSON.stringify(report);
+
+    const reportjokeId = [];
+    report.filter((doc) => reportjokeId.push(doc.jokeId));
+
     const [relVal, setRelVal] = useState("");
     
     function onDelete(jokes) {
@@ -113,6 +119,15 @@ function AddData() {
                 </div>
                 
                 ))}
+                </Col>
+            </Row>
+            <Row md={2}>
+                <Col>
+                    <h4>REPORT</h4>
+                    <JSONPretty id="json-pretty" data={reports} ></JSONPretty>
+                </Col>
+                <Col>
+            
                 </Col>
             </Row>
         </Container>

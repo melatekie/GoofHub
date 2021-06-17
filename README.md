@@ -44,17 +44,20 @@ A web app where users of all ages are able to enjoy text, image, and video jokes
         - Current username is shown and can be clicked to profile page
         - Log out button appears
 * Log In
-    - Users log in with their username and password
-    - Log in button disabled when username or password are empty
+    - Users log in with their email and password
+    - Log in button disabled when email or password are empty
     - Has a button to Sign Up Screen
+    - Has buttn to reset password
 * Sign Up
-    - Switches between sign up with User or Professional
-    - Users can enter to Home screen immediately after sign up
-    - Professionals are brought back to Log In screen after sign up
-    - Goes back to Log In screen with back button
+    - Information needed: first, last name, date of birth, username, email address, password
+    - User is logged in immediately after sign up
+    - Log In screen button
+* Reset Password
+    - Enter email address to receive a reset link
+    - Log In screen button
 * Profile
     - Displays user first and last name, date of birth, username and email
-    - User able to change username. Profile name in NavBar is changed after automatic refresh. All other areas immediate change.
+    - User able to change username. Profile name in NavBar is changed after automatic refresh. All other areas immediate change. Username change also appears on the jokes they submitted except if jokes are created Anonymous.
     - User able to change email with correct current password
     - User able to change password with correct current password 
 * Submit a Joke
@@ -64,34 +67,25 @@ A web app where users of all ages are able to enjoy text, image, and video jokes
     - Image joke: Image file is required.
     - Video joke: YouTube video link is required.
     - Keywords: At least one word is required.
-    - User has the option to submit the joke as Anonymous.
+    - User has the option to submit joke as Anonymous.
 * Search Page
+    - When the correct keyword typed all the jokes with that keyword appears. Jokes can be filtered based on text, image, or video.
 * Category Jokes Page
-    - Back button takes user back to Home Activity
-    - Action bar displays username of post creator and beginning of description
-    - Displays similar info as Home Activity 
-    - Full image button shows a popup with the full image
-    - Tag for its category
-    - Current user can reply to post, increments comment count
-    - Current user profile image displays next to reply space
-    - All related comments are displays for post
-    - Replied comments displays user profile image, username, description, time difference
-    - Users can delete their own comments, also decrements comment count
+    - Each joke contains the content, username of joke creator, number of likes and report button
+    - Jokes are displayed according to the latest createdAt date first.
+    - Red heart indicates each joke the current user likes. Each user can only like each joke once. Click again to unlike joke.
+    - To flag or report a joke user has to state a reason. User can flag more than once.
 * Admin Page
+    - Only a moderator has the ability to access the secretPage by typing on the url sitename.com/secretpage
+    - New submitted jokes are shown for review. Moderator can edit video links, add or delete keywords, edit category, edit type, decide it to be released on site, or delete it forever. The left column shows JSON format of input from database. Right column shows the content. Below the new jokes, reported jokes are listed in JSON format and their reasons.
 
 **Optional Nice-to-have Stories**
-* Tips to pop up when open app
-* Administration to monitor users and professionals
-* Setting
-    * Choose to show private information or not 
-    * change password
-* rating
-* upload profile image
-* reply to posts
-* other users can DM other users
-* Search posts
-* Professionals can advertise
-* Users can search for repair/fix based on their location
+* Sharing jokes in social media
+* Wider variety of emoji likes (ie. Funny, Cringe, Aww, Wow emojis)
+* Joke recommendations based on user likes
+* List all the jokes and the likes user has submitted in Profile page
+* Upload profile image
+* Able to follow other users
 
 ### 2. Navigation
 **Navigation Bar (top)**
@@ -100,32 +94,6 @@ A web app where users of all ages are able to enjoy text, image, and video jokes
 * Profile
 * Log In/Log Out
 * Search
-
-
-**Flow Navigation** (Screen to Screen)
-* Login
-    - Home
-    - Register
-* Register
-    - Cancel to Login
-    - Home
-* Home
-    - Category page
-    - Submit a joke
-    - Profile
-    - Search
-    - Log-In/Log-Out
-* Profile
-    - Log out button to Log in 
-* Detail Post
-    - back to previous 
-* User Profile
-    - back to previous 
-* Compose
-    - Home
-* LogOut
-    * Login
-
 
 ## Wireframes
 
