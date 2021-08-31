@@ -10,7 +10,6 @@ Web App Design Project
 ## Table of Contents
 1. [Overview](#Overview)
 1. [Product Spec](#Product-Spec)
-1. [Wireframes](#Wireframes)
 2. [Schema](#Schema)
 
 ## Overview
@@ -94,8 +93,6 @@ A web app where users of all ages are able to enjoy text, image, and video jokes
 * Profile
 * Log In/Log Out
 * Search
-
-## Wireframes
 
 
 ## Schema
