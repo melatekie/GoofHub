@@ -11,7 +11,7 @@
     "bootstrap": "^4.6.1",
     "firebase": "^8.10.1",
     "react": "^16.14.0",
-    "react-bootstrap": "^1.6.4",
+    "react-bootstrap": "^1.6.5",
     "react-dom": "^16.14.0",
     "react-icons": "^3.11.0",
     "react-json-pretty": "^2.2.0",
