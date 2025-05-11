@@ -5,17 +5,17 @@
   "dependencies": {
     "@auth0/auth0-react": "^1.10.0",
     "@testing-library/jest-dom": "^5.16.2",
-    "@testing-library/react": "^10.4.9",
+    "@testing-library/react": "^16.0.0",
     "@testing-library/user-event": "^7.2.1",
     "boostrap": "^2.0.0",
     "bootstrap": "^4.6.1",
     "firebase": "^8.10.1",
     "react": "^16.14.0",
-    "react-bootstrap": "^1.6.5",
+    "react-bootstrap": "^2.0.0",
     "react-dom": "^16.14.0",
     "react-icons": "^3.11.0",
     "react-json-pretty": "^2.2.0",
-    "react-router-dom": "^5.3.1",
+    "react-router-dom": "^6.4.0",
     "react-scripts": "^5.0.0"
   },
   "scripts": {
